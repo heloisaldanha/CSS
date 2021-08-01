@@ -1,0 +1,12 @@
+.noticia{
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: center;
+}
+
+h1{
+    margin: 0;
+    border-bottom: 1px solid gray;
+    text-align: center
+    /* h1 já tem margem por padrão */
+}

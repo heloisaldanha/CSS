@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline,  block e inline-block</title>
+    <style>
+        .borda{
+            border: 1px solid red;
+        }
+
+        .inline{
+            border: 1px solid red;
+            display: inline;
+        }
+
+        .bloco{
+            border: 1px solid red;
+            display: block;
+        }
+
+        .inline-block{
+            border: 1px solid red;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class="borda">Bloco 1</h1>
+    <h1 class="borda">Bloco 2</h1>
+    <h1 class="inline">Bloco 3</h1>  <!-- usando display: inline;-->
+    <h1 class="inline">Bloco 4</h1>  <!-- usando display: inline;-->
+    <hr>
+    <br><br><br><br>  <!-- só pra separar -->
+    
+    <!--
+        h1 é um elemento de bloco, onde o espaçamento ocupa toda a telae fica um abaixo do outro, como podemos
+        ver nos blocos 1 e 2. Quando usamos o display inline, ele se transforma no inline, onde o espaçamento
+        ocupa apenas o tamanho do conteúdo e fica um a frente do outro, na mesma linha.
+    -->
+
+    <span class="borda">Inline 1</span>
+    <span class="bloco">Inline 2</span>
+    <hr>
+    <br><br><br><br>
+    <!--
+        span, ao contrário, é um elemento inline, onde o conteúdo só ocupa o tamanho do conteúdo e ficam
+        na mesma linha. Usando o display block, ele passa a ter comportamento de elementos de bloco.
+    -->
+
+    <span class="inline-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam mollitia optio porro consequuntur libero eveniet placeat eligendi, aliquid, consequatur saepe magni earum dolore in nisi obcaecati fugiat modi cupiditate laudantium.</span>
+    <span class="borda">Lorem ipsum</span>
+
+    <!--
+        nesse caso, o span, mesmo sendo grande, quando terminasse o texto, o lorem ipsum seguinte viria na
+        mesma pásgina onde o primeiro terminou. Usando o inline-block, o lorem ipsum vai pra linha de baixo.
+    -->-->
+</body>
+</html>

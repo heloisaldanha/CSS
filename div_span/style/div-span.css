@@ -1,0 +1,21 @@
+.top{
+    background: gray;
+
+}
+
+.conteudo{
+    background: red;
+}
+
+.rodape{
+    background: green;
+}
+
+.produto{
+    background: turquoise;
+    margin: 10px;
+}
+
+#azul{
+    color: blue;
+}
