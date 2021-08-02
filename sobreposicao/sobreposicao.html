@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sobreposição de elementos</title>
+        <style>
+            .container {
+                background: pink;
+                width: 200px;
+                height: 200px;
+                margin: 10px;
+                position: relative;
+                z-index: 0;
+            }
+
+            .rodape{
+                width: 100%;
+                height: 50px;
+                background: red;
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                z-index: 1;
+            }
+
+            .texto-rodape{
+                color: white;
+                text-align: center;
+                margin-top: 17px;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="conteudo">Conteúdo 1</div>
+        </div>
+
+        <div class="container">
+            <div class="conteudo">Conteúdo 2</div>
+        </div>
+
+        <div class="container">
+            <div class="conteudo">Conteúdo 3</div>
+        </div>
+
+        <div class="rodape">
+            <div class="texto-rodape">Rodapé</div>
+        </div>
+
+        <div class="container">
+            <div class="conteudo">Conteúdo 5</div>
+        </div>
+
+        <div class="container">
+            <div class="conteudo">Conteúdo 6</div>
+        </div>
+
+        <div class="container">
+            <div class="conteudo">Conteúdo 6</div>
+        </div>
+
+        <div class="container">
+            <div class="conteudo">Conteúdo 6</div>
+        </div>
+
+        <div class="container">
+            <div class="conteudo">Conteúdo 6</div>
+        </div>
+
+    </body>
+</html>
