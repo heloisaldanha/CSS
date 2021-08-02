@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .principal{
+                text-align: center;
+                background: orange;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+            }
+
+            .secundario{
+                margin: 30px 0;
+                color: white;
+            }
+            a{
+                text-decoration: none;
+                margin: 5px;
+                padding: 5px;
+            }
+            /* links não visitados */
+            a:link{
+                color:rgb(49, 146, 11);
+            }
+
+            /* links visitados */
+            a:visited{
+                color:black;
+            }
+
+            /* links quando o mouse passa por cima */
+            a:hover{
+                background:rgb(155, 233, 124);
+                color: rgb(49, 146, 11);
+            }
+
+            a:active{
+                color: red;
+            }
+
+
+        </style>
+        <title>Formatação de links</title>
+        
+    </head>
+    <body>
+        <div class="principal">
+            <div class="secundario">
+                <a href="https://www.google.com/">Google </a>|
+                <a href="https://www.twitter.com">Twitter </a>|
+                <a href="https://heloisaldanha.github.io/">Portfolio </a>|
+                <a href="https://www.linkedin.com">LinkedIn </a>
+            </div>
+        </div>
+    </body>
+</html>
