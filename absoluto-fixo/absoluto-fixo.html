@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Posicionamento absoluto e fixo</title>
+        <style>
+            .container{
+                background: pink;
+                width: 200px;
+                height: 200px;
+                position: relative;
+                margin: 10px;
+            }
+
+            .conteudo{
+                position: absolute;
+                top: 85px;
+                bottom: 85px;
+                left: 30%;
+            }
+
+            .fixed{
+                background: red;
+                color: white;
+                width: 200px;
+                height: 200px;
+                position: fixed;
+                top: 0px;
+                right: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="conteudo">Conteúdo 1</div>
+        </div>
+
+        <div class="container">
+            <div class="conteudo">Conteúdo 2</div>
+        </div>
+
+        <div class="container">
+            <div class="conteudo">Conteúdo 3</div>
+        </div>
+
+        <div class="fixed">
+            <div class="conteudo">Conteúdo 4</div>
+        </div>
+
+        <div class="container">
+            <div class="conteudo">Conteúdo 5</div>
+        </div>
+
+        <div class="container">
+            <div class="conteudo">Conteúdo 6</div>
+        </div>
+
+    </body>
+</html>
