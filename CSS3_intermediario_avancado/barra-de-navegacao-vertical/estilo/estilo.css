@@ -1,0 +1,53 @@
+ul{
+    list-style-type: none;  /* tirar os pontinhos da lista */
+    margin: 0;
+    padding: 0;
+    /* quando se tira os pontinhos, ainda assim fica o espaço que eles ocupavam */ 
+}
+
+/* li{
+    padding: 5px 20px;
+    background: url(../imagens/seta.png) no-repeat left center;
+    
+        a setinha ocupava todo o elemento, usando o no-repeat ela se torna única, o left e o center é indicando
+        a direção que ela deve tomar, nesse caso, à esquerda e no centro.
+    
+} */
+
+ul a{  /* pegar os links que estão dentro da lista */
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: black;
+    text-indent: 35px;
+    line-height: 40px;  /* altura da linha, que dá pra centralizar facilmente com a caixa que o testo está inserido */ 
+    text-decoration: none;
+    background: yellow url(../imagens/menu.png) no-repeat left;  /* sempre bom fazer um teste com o link da imagem quebrada */ 
+}
+
+/*
+    A largura* e altura foi colocada nas mesmas dimensões da imagem.
+    Caso fosse uma dimensão diferente, seria interessante colocar o no-repeat e a posição adequada
+    (right/left/top/bottom/center). Como as dimensões são iguais, não foi necessário.
+
+    * A largura é a metade da imagem total mas é a mesma de cada cor.
+
+    Acontece que quando passa o mouse por cima, a imagem muda de left pra right, fazendo
+    que a cor padrão seja amarela, mas quando o mouse passa, a imagem ande pra direita, aparecendo
+    o laranja. Por isso o hover abaixo com o background-position right.
+
+    -   caso a imagem não carregue é uma boa prática colocar algumas alterações que possam resolver esse problema
+        como uma cor background do link, uma cor na fonte, uma cor no hover, etc
+*/ 
+
+a:hover{
+    background-position: right;
+    background-color: orange;  /* caso a imagem quebre */ 
+    color: white;
+}
+
+/*
+    Caso queira mudar a imagem ao passar a imagem, também pode-se colocar um
+    background url com o caminho da outra imagem ou outra cor com background-color.
+*/
+
